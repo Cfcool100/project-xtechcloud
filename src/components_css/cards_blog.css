@@ -1,15 +1,9 @@
-.left p {
-	margin-bottom: 1rem;
-	font-size: 1.3rem;
-	text-align: -webkit-match-parent;
-	font-weight: 300;
-}
-#service {
+#blog {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
-#service h2 {
+#blog h2 {
 	width: fit-content;
 	margin-left: 2rem;
 	padding-bottom: 0.6rem;
@@ -17,19 +11,19 @@
 	color: #444444;
 	transition: ease-out 0.25s;
 }
-#service h2:hover {
+#blog h2:hover {
 	color: #ff0060;
 	border-bottom: 1px solid #e77baf;
 }
 a {
 	text-decoration: none;
 }
-.cards {
+.cards_blog {
 	display: flex;
 	justify-content: space-evenly;
 	margin: 1.5rem 0;
 }
-.card {
+.card_blog {
 	width: 25%;
 	height: 220px;
 	border: 1px solid #9babb8;
@@ -41,28 +35,4 @@ a {
 	background-size: 60%;
 	background-position: center right;
 	background-color: #fff;
-}
-.card::before:hover::after {
-	color: #fff;
-}
-.card:hover {
-	color: #ff0060;
-	transform: scale(1.1);
-}
-.card h4 {
-	width: 100%;
-	height: 100%;
-}
-.card h4:hover {
-	margin: 0.5rem 0 0 1rem;
-	scale: 1.1;
-}
-.card-crm {
-	background-image: url(../img/strategie-crm.png);
-}
-.card-strategie {
-	background-image: url(../img/strategie-digital.png);
-}
-.card-auto {
-	background-image: url(../img/automatisation.png);
 }

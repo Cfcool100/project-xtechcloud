@@ -1,5 +1,5 @@
 import React from 'react'
-import '../components/cards.css'
+import '../components_css/cards_services.css'
 import { Link } from 'react-router-dom'
 
 const ServicesCards = () => {
