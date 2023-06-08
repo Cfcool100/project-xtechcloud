@@ -1,34 +1,62 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Container, Form, FormControl, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import axios from 'axios';
 
 
 const ContactForm = () => {
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [object, setObject] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await axios.post('http://localhost:4000/contact', {
+        name,
+        email,
+        object,
+        message
+      });
+      console.log(response.data);
+      // Réinitialisez les champs du formulaire après avoir envoyé les données
+      setName('');
+      setEmail('');
+      setObject('');
+      setMessage('');
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   return (
     <>
       <Container id='contact-form'>
           <Form id='form'>
-            <Form.Group controlId="formName">
+            <Form.Group controlId="input">
               <Form.Label>Nom :</Form.Label>
-              <FormControl type="text" id='input' placeholder="Entrez votre nom" />
+              <FormControl type="text" placeholder="Entrez votre nom" value={name} onChange={(e) => setName(e.target.value)}/>
             </Form.Group>
 
-            <Form.Group controlId="formEmail">
+            <Form.Group controlId="mail">
               <Form.Label>Email :</Form.Label>
-              <FormControl type="email" id='input' placeholder="Entrez votre email" />
+              <FormControl type="email" placeholder="Entrez votre email" value={email} onChange={(e) => setEmail(e.target.value)}/>
             </Form.Group>
 
-            <Form.Group controlId="formObject">
+            <Form.Group controlId="input">
               <Form.Label>Objet :</Form.Label>
-              <FormControl type="email" id='input' placeholder="Entrez votre objet" />
+              <FormControl type="text" placeholder="Entrez votre objet" value={object} onChange={(e) => setObject(e.target.value)}/>
             </Form.Group>
 
-            <Form.Group controlId="formMessage">
+            <Form.Group controlId="text-area">
               <Form.Label>Message :</Form.Label>
-              <FormControl as="textarea" rows={4} id='text-area' placeholder="Entrez votre message" />
+              <FormControl as="textarea" rows={4} placeholder="Entrez votre message" value={message} onChange={(e) => setMessage(e.target.value)}/>
             </Form.Group>
 
-            <Button variant="primary" type="submit" id='submit'>Envoyer</Button>
+            <Button variant="primary" type="submit" onSubmit={handleSubmit}>Envoyer</Button>
           </Form>
     </Container>
     </>
