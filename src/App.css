@@ -16,7 +16,6 @@ body {
 	display: flex;
 	height: 4rem;
 	align-items: center;
-	/* border-bottom: 1px solid #d7cfcf; */
 	margin: 0rem 0 3rem 0;
 	padding-top: 1.3rem;
 	padding-bottom: 0.1rem;
@@ -38,8 +37,12 @@ body {
 	height: 100%;
 	margin-left: 2.5rem;
 	padding-bottom: 1rem;
+	background: #fff;
+	background-clip: content-box;
+	border-top-left-radius: 10rem;
+	border-top-right-radius: 10rem;
 }
-.Navbar a {
+.Navbar .nav a {
 	display: flex;
 	height: 95%;
 	margin: 0 2.5rem;
@@ -50,7 +53,7 @@ body {
 	align-items: center;
 	transition: all ease-in-out 0.2s;
 }
-.Navbar a:hover {
+.Navbar a:not(:first-child):hover {
 	color: #fff;
 	border-bottom: 5px solid #0d6efd;
 	transform: scale(1.1);
@@ -60,7 +63,7 @@ body {
   justify-content: center;
 	height: 80vh;
 	padding-left: 1rem;
-  background: url("./img/magicpattern.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/magicpattern.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -72,6 +75,10 @@ body {
 	justify-content: center;
   color: #fff;
   font-family: 'Inter', sans-serif;
+	text-align: justify;
+}
+.left p{
+	line-height: 2.2rem;
 }
 
 /* service */
@@ -201,17 +208,8 @@ h3 {
 }
 #service,
 #blog {
-	height: 75vh;
+	height: 50vh;
 }
-/* .extern {
-	width: 100%;
-	height: 100%;
-	background-size: cover;
-	background-position: center center;
-	background-repeat: repeat;
-	background-image: url("./img/magicpattern-wave-generator.png");
-} */
-/* blog */
 
 #blog {
 	height: 75vh;
@@ -261,10 +259,6 @@ label {
 	margin: 1rem 0;
 	font-family: "Geologica", sans-serif;
 }
-/* #name {
-	width: 55%;
-	height: 2rem;
-} */
 #input, #mail {
 	height: 2rem;
 	padding: 0.2rem 0 0.2rem 1rem !important;
@@ -279,7 +273,7 @@ label {
 #input,
 #text-area,
 #mail:focus {
-  box-shadow: none;/* Remplacez cette couleur par la couleur de bordure par défaut de votre formulaire */
+  box-shadow: none;
   outline: 0;
 }
 .btn-primary {
@@ -300,15 +294,4 @@ label {
 	padding: 0.5rem 0.2rem 0 0.5rem;
 	outline: none;
 }
-/* Footer */
 
-.footer {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	height: 7vh;
-	background-color: #0a0a0a;
-  color: #fff;
-}

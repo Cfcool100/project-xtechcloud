@@ -5,8 +5,10 @@ import logo from '../img/logo.png'
 const NavBar = () => {
   return (
     <div className='Navbar'>
-      <div className='logo'>
+      <div className='logo'>  
+      <Link to={'/'}>
         <img src={logo} alt="" />
+      </Link>
       </div>
       <div className='nav'>
       <Link to={'/'}>Accueil</Link>

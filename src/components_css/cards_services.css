@@ -29,7 +29,7 @@ a {
 	justify-content: space-evenly;
 	margin: 1.5rem 0;
 }
-.card {
+.card_service {
 	width: 25%;
 	height: 220px;
 	border: 1px solid #9babb8;
@@ -45,16 +45,16 @@ a {
 /* .card::before:hover::after {
 	color: #fff;
 } */
-.card:hover {
+.card_service:hover {
 	color: #ff0060;
 	transform: scale(1.1);
 	box-shadow: .5rem .5rem 0 0 rgba(0, 0, 0, 0.3);
 }
-.card h4 {
+.card_service h4 {
 	width: 100%;
 	height: 100%;
 }
-.card h4:hover {
+.card_service h4:hover {
 	margin: 0.5rem 0 0 1rem;
 	scale: 1.1;
 }

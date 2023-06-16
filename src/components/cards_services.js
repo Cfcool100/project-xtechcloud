@@ -8,13 +8,13 @@ const ServicesCards = () => {
       <section id='service'>
         <Link to={'/services'}><h2>Nos Services</h2></Link>
         <div className="cards">
-          <div className="card card-crm">
+          <div className="card_service card-crm">
             <h4>Stratégie de CRM</h4>
           </div>
-          <div className="card card-strategie">
+          <div className="card_service card-strategie">
             <h4>Stratégie digitale</h4>
           </div>
-          <div className="card card-auto">
+          <div className="card_service card-auto">
             <h4>Automatisation</h4>
           </div>
         </div>

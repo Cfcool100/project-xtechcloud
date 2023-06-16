@@ -25,14 +25,31 @@ a {
 }
 .card_blog {
 	width: 25%;
-	height: 220px;
+	height: 100px;
 	border: 1px solid #9babb8;
 	border-radius: 0.3rem;
 	font-size: 1.2rem;
 	padding: 0.4rem 0 0 1rem;
 	transition: ease-in-out 0.3s;
+	background: url(../img/back.png);
 	background-repeat: no-repeat;
-	background-size: 60%;
-	background-position: center right;
+	background-size: cover;
+	background-position: center ;
 	background-color: #fff;
+}
+.card_blog > h4{
+	font-size: 1.3rem;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 90%;
+	height: 100%;
+	overflow: hidden;
+	color: #fff;
+	padding-top: .5rem;
+	transition: all .5s ease-in-out;
+}
+.card_blog > h4:hover{
+	color: #ff0060;
+	scale: 1.1;
+	padding: 1rem 0 0 1rem;
 }

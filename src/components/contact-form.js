@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { Container, Form, FormControl, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
@@ -15,13 +15,13 @@ const ContactForm = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:4000/contact', {
+      const res = await axios.post('http://localhost:4000/contact', {
         name,
         email,
         object,
         message
       });
-      console.log(response.data);
+      console.log(res.data);
       // Réinitialisez les champs du formulaire après avoir envoyé les données
       setName('');
       setEmail('');
@@ -35,7 +35,7 @@ const ContactForm = () => {
   return (
     <>
       <Container id='contact-form'>
-          <Form id='form'>
+          <Form id='form' onSubmit={handleSubmit}>
             <Form.Group controlId="input">
               <Form.Label>Nom :</Form.Label>
               <FormControl type="text" placeholder="Entrez votre nom" value={name} onChange={(e) => setName(e.target.value)}/>
@@ -56,7 +56,7 @@ const ContactForm = () => {
               <FormControl as="textarea" rows={4} placeholder="Entrez votre message" value={message} onChange={(e) => setMessage(e.target.value)}/>
             </Form.Group>
 
-            <Button variant="primary" type="submit" onSubmit={handleSubmit}>Envoyer</Button>
+            <Button variant="primary" type="submit" >Envoyer</Button>
           </Form>
     </Container>
     </>

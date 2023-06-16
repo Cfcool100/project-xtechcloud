@@ -1,6 +1,5 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import './App.css';
 import Acceuil from './pages/acceuil';
 import Services from './pages/services';
 import Blog from './pages/blog';
