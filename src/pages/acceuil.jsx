@@ -22,7 +22,7 @@ function Acceuil() {
       .catch((err) => {
         console.log(err.message);
       });
-  }, [data]);
+  }, []);
 
 
 

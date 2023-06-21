@@ -11,16 +11,11 @@ const Blog = () => {
   const [loading, setLoading] = useState(true);
 
   const fetchData = async () => {
-    try {
-      const response = await axios.get("http://localhost:4000/blog");
-      setData(response.data);
-    } catch (error) {
-      console.error("Error fetching data:", error);
-      // Handle the error state or display an error message
-    } finally {
-      setLoading(false);
-    }
-  };
+    const d = await axios.get("http://localhost:4000/blog")
+    console.log(d);
+    setData(d.data);
+    setLoading(false);
+  }
 
   useEffect(() => {
     setLoading(true);
