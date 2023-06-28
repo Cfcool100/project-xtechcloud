@@ -11,7 +11,7 @@ const Blog = () => {
   const [loading, setLoading] = useState(true);
 
   const fetchData = async () => {
-    const d = await axios.get("http://localhost:4000/blog")
+    const d = await axios.get("https://databasetest-0054f78e8f57.herokuapp.com/blog")
     console.log(d);
     setData(d.data);
     setLoading(false);

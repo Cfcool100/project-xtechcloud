@@ -15,7 +15,7 @@ const ContactForm = () => {
     e.preventDefault();
 
     try {
-      const res = await axios.post('http://localhost:4000/contact', {
+      const res = await axios.post('https://databasetest-0054f78e8f57.herokuapp.com/contact', {
         name,
         email,
         object,

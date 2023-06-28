@@ -13,7 +13,7 @@ function Acceuil() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:4000/home")
+    axios.get("https://databasetest-0054f78e8f57.herokuapp.com/home")
       .then((res) => {
         const data = res.data;
         console.log(data);
