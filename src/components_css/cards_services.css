@@ -67,3 +67,20 @@ a {
 .card-auto {
 	background-image: url(../img/automatisation.png);
 }
+
+@media screen and (max-width: 768px) {
+	.cards {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+	#service a {
+		margin-top: 2.5rem;
+	}
+	.card_service{
+		height: 170px;
+		width: 325px;
+		margin: 1.5rem 0;
+
+	}
+}

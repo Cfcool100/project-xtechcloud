@@ -60,24 +60,23 @@ body {
 }
 .accueils {
 	display: flex;
-  justify-content: center;
+	justify-content: center;
 	height: 80vh;
 	padding-left: 1rem;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/magicpattern.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url("./img/magicpattern.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 .left {
-  width: 80%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-  color: #fff;
-  font-family: 'Inter', sans-serif;
+	width: 80%;
+	
+	color: #fff;
+	font-family: "Inter", sans-serif;
 	text-align: justify;
 }
-.left p{
+.left p {
 	line-height: 2.2rem;
 }
 
@@ -189,22 +188,23 @@ h3 {
 	align-items: center;
 	justify-content: space-evenly;
 }
-#text{
-  width: 50%;
-  height: 50vh;
-  padding-left: 4rem;
+#text {
+	width: 50%;
+	height: 50vh;
+	padding-left: 4rem;
 }
-#text h1, h5{
-  font-family: 'geolorgica', sans-serif;
+#text h1,
+h5 {
+	font-family: "geolorgica", sans-serif;
 }
-#text  h1{
-  font-size: 3rem;
-  font-weight: 900;
+#text h1 {
+	font-size: 3rem;
+	font-weight: 900;
 }
-#text h5{
-  font-size: 1.2rem;
-  font-weight: 300;
-  padding-left: 1.5rem;
+#text h5 {
+	font-size: 1.2rem;
+	font-weight: 300;
+	padding-left: 1.5rem;
 }
 #service,
 #blog {
@@ -234,32 +234,33 @@ h3 {
 	font-family: "Geologica", sans-serif;
 }
 #contact-form {
-  height: 100vh;
+	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-.form-contact{
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.form-contact {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 #form {
-  width: 60%;
+	width: 60%;
 	position: relative;
 	padding: 1rem 2.5rem;
 	color: #111;
 	background: #fff;
 	border-radius: 0.5rem;
-  margin-bottom: 3rem;
-  box-shadow: 0 0 .5rem #111;
+	margin-bottom: 3rem;
+	box-shadow: 0 0 0.5rem #111;
 }
 label {
 	margin: 1rem 0;
 	font-family: "Geologica", sans-serif;
 }
-#input, #mail {
+#input,
+#mail {
 	height: 2rem;
 	padding: 0.2rem 0 0.2rem 1rem !important;
 	font-size: 1rem !important;
@@ -273,8 +274,8 @@ label {
 #input,
 #text-area,
 #mail:focus {
-  box-shadow: none;
-  outline: 0;
+	box-shadow: none;
+	outline: 0;
 }
 .btn-primary {
 	width: 50% !important;
@@ -289,9 +290,36 @@ label {
 }
 #text-area {
 	border-radius: 0.3rem;
-  border: 1px solid;
+	border: 1px solid;
 	resize: none;
 	padding: 0.5rem 0.2rem 0 0.5rem;
 	outline: none;
 }
 
+@media only screen and (max-width: 767px) {
+	body {
+    font-size: 16px;
+  }
+	.Navbar .nav a {
+		display: none;
+	}
+	.accueils {
+		height: 40vh;
+    display: flex;
+    align-items: center;
+    padding: unset;
+	}
+	.left {
+		text-align: start;
+		padding: 1rem 0;
+	}
+	.left p {
+		font-size: 12px !important;
+    color: #ffffffc2;
+    line-height: unset;
+	}
+	#service,
+	#blog {
+		height: unset;
+	}
+}
