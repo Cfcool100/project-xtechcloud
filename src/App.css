@@ -305,22 +305,32 @@ label {
 		display: none;
 	}
 	.accueils {
-		height: 40vh;
+		height: 45vh;
     display: flex;
     align-items: center;
     padding: unset;
 	}
 	.left {
-		text-align: start;
-		padding: 1rem 0;
+		height: 100%;
+		text-align: justify;
+		display: flex;
+		align-items: center;
 	}
 	.left p {
-		font-size: 12px !important;
+		font-size: 10px !important;
     color: #ffffffc2;
     line-height: unset;
 	}
 	#service,
 	#blog {
 		height: unset;
+	}
+	.logo img {
+    width: 41px;
+    height: 100%;
+    margin-left: 1rem;
+    padding-bottom: 1rem;
+    background: #fff;
+    background-clip: content-box;
 	}
 }
