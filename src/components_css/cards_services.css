@@ -73,14 +73,16 @@ a {
 		display: flex;
 		align-items: center;
 		flex-direction: column;
+		margin: 1rem 0;
 	}
 	#service a {
-		margin-top: 2.5rem;
+		margin-top: unset;
 	}
 	.card_service{
 		height: 170px;
-		width: 325px;
+		width: 85%;
+	}
+	.card_service:nth-child(odd){
 		margin: 1.5rem 0;
-
 	}
 }

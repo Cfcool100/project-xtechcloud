@@ -62,7 +62,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 80vh;
+	height: 80%;
 	padding-left: 1rem;
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 		url("./img/magicpattern.png");
@@ -72,7 +72,6 @@ body {
 }
 .left {
 	width: 80%;
-	
 	color: #fff;
 	font-family: "Inter", sans-serif;
 	text-align: justify;
@@ -301,36 +300,91 @@ label {
 	body {
     font-size: 16px;
   }
+	.Navbar {
+    height: 2.5rem;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-top: unset;
+    padding-bottom: unset;
+}
+	
+	.Navbar .logo {
+		width: 15%;
+	}
+	.nav {
+		width: 85%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1rem;
+	}
 	.Navbar .nav a {
 		display: none;
 	}
 	.accueils {
-		height: 45vh;
+		height: 50vh;
     display: flex;
     align-items: center;
     padding: unset;
+		margin-bottom: 10px;
 	}
 	.left {
-		height: 100%;
 		text-align: justify;
-		display: flex;
-		align-items: center;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    width: unset;
 	}
 	.left p {
 		font-size: 10px !important;
     color: #ffffffc2;
     line-height: unset;
+    margin-bottom: unset !important;
 	}
 	#service,
 	#blog {
 		height: unset;
 	}
-	.logo img {
-    width: 41px;
-    height: 100%;
-    margin-left: 1rem;
-    padding-bottom: 1rem;
-    background: #fff;
-    background-clip: content-box;
+	#service h2, #blog h2{
+		width: unset !important;
+		padding-bottom: unset !important;
 	}
+	.logo img {
+    width: 35px;
+    margin-left: 1rem;
+    padding-bottom: unset;
+	}
+	#contact {
+    padding: unset;
+		display: block;
+	}
+	.form-contact {
+    width: initial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-contact {
+	width: unset;
+	padding: 2rem 0 0 1.5rem;
+}
+.text-contact > h1 {
+	font-size: 2rem;
+	font-family: "Geologica", sans-serif;
+}
+	#contact-form {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+	#form {
+    width: 90%;
+    position: relative;
+    padding: 1rem 1.5rem;
+    color: #111;
+    background: #fff;
+    border-radius: 0.5rem;
+    margin-bottom: 3rem;
+	}
+
 }
