@@ -59,6 +59,9 @@ body {
 	border-bottom: 5px solid #0d6efd;
 	transform: scale(1.1);
 }
+.nav .menu-icon {
+	display: none;
+}
 .accueils {
 	display: flex;
 	justify-content: center;
@@ -319,7 +322,9 @@ label {
     justify-content: flex-end;
     padding-right: 1rem;
   }
-
+	.nav .menu-icon{
+		display: block;
+	}
   .Navbar .nav a {
     display: none;
   }

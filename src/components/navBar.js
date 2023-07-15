@@ -30,6 +30,7 @@ const NavBar = () => {
           size='lg'
           style={{ color: '#f1f4f8' }}
           onClick={handleClick}
+          className='menu-icon'
         />
       </div>
     </div>
