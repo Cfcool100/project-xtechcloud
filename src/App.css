@@ -23,13 +23,14 @@ body {
 }
 
 .Navbar .logo {
-	width: 60%;
+	width: 15%;
 }
 .nav {
+	width: 85%;
 	height: 100%;
 	position: relative;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-end;
 	align-items: center;
 }
 .logo img {
@@ -62,8 +63,8 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 80%;
-	padding-left: 1rem;
+	height: 80vh;
+	margin-bottom: 1.5rem;
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 		url("./img/magicpattern.png");
 	background-repeat: no-repeat;
@@ -298,28 +299,30 @@ label {
 
 @media only screen and (max-width: 767px) {
 	body {
-    font-size: 16px;
-  }
-	.Navbar {
+		font-size: 16px;
+	}
+  .Navbar {
     height: 2.5rem;
     align-items: center;
     margin-bottom: 2rem;
     padding-top: unset;
     padding-bottom: unset;
-}
-	
-	.Navbar .logo {
-		width: 15%;
-	}
-	.nav {
-		width: 85%;
+  }
+
+  .Navbar .logo {
+    width: 15%;
+  }
+
+  .nav {
+    width: 85%;
     display: flex;
     justify-content: flex-end;
     padding-right: 1rem;
-	}
-	.Navbar .nav a {
-		display: none;
-	}
+  }
+
+  .Navbar .nav a {
+    display: none;
+  }
 	.accueils {
 		height: 50vh;
     display: flex;
@@ -386,5 +389,10 @@ label {
     border-radius: 0.5rem;
     margin-bottom: 3rem;
 	}
-
+	.footer{
+		height: 35px;
+	}
+	.footer h4{
+		font-size: unset;
+	}
 }

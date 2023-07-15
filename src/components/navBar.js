@@ -9,7 +9,7 @@ const NavBar = () => {
 
   const [isOpen, setIsOpen] = useState(false)
 
-  const HandleClick = () => {
+  const handleClick = () => {
     setIsOpen(!isOpen);
   }
 
@@ -20,7 +20,7 @@ const NavBar = () => {
           <img src={logo} alt="" />
         </Link>
       </div>
-      <div className='nav'>
+      <div className={`nav ${isOpen ? 'open' : ''}`}>
         <Link to={'/'}>Accueil</Link>
         <Link to={'/services'}>Services</Link>
         <Link to={'/blog'}>Blog</Link>
@@ -29,7 +29,7 @@ const NavBar = () => {
           icon={isOpen ? faClose : faBars}
           size='lg'
           style={{ color: '#f1f4f8' }}
-          onClick={HandleClick}
+          onClick={handleClick}
         />
       </div>
     </div>
