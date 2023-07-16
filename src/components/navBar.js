@@ -20,7 +20,7 @@ const NavBar = () => {
           <img src={logo} alt="" />
         </Link>
       </div>
-      <div className={`nav ${isOpen ? 'open' : ''}`}>
+      <div className={`nav ${isOpen ? 'open' : ''} ${isOpen ? 'mobile' : ''}`}>
         <Link to={'/'}>Accueil</Link>
         <Link to={'/services'}>Services</Link>
         <Link to={'/blog'}>Blog</Link>
