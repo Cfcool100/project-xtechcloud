@@ -365,11 +365,6 @@ label {
 		padding-bottom: unset;
 		margin: unset;
   }
-	.nav.mobile a:not(:first-child):hover {
-		color: #fff;
-		border-bottom: 5px solid #0d6efd;
-		transform: scale(1.1);
-	}
 	.accueils {
 		height: 50vh;
     display: flex;
@@ -422,7 +417,6 @@ label {
 	font-family: "Geologica", sans-serif;
 }
 	#contact-form {
-    height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -435,11 +429,41 @@ label {
     background: #fff;
     border-radius: 0.5rem;
     margin-bottom: 3rem;
+		border: 1px solid #ddd9d9;
+		box-shadow: unset;
 	}
 	.footer{
 		height: 35px;
 	}
 	.footer h4{
 		font-size: unset;
+	}
+
+	/* contact page */
+
+	.back {
+		height: 42vh;
+	}
+	.formulaire{
+		height: unset;
+		flex-direction: column;
+		margin-top: 2rem;
+	}
+	#text{
+		width: unset;
+		height: unset;
+		padding-left: 1rem;
+		margin: 1rem 0;
+	}
+	#text h1{
+		font-size: 3em;
+		margin-bottom: unset;
+	}
+	#text h5{
+		color: #efa4a4;
+		content: "Remplissez ce formulaire 👉🏾11";
+	}
+	label{
+		font-size: .9rem;
 	}
 }

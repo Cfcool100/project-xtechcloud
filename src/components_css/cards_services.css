@@ -85,4 +85,13 @@ a {
 	.card_service:nth-child(odd){
 		margin: 1.5rem 0;
 	}
+	.card_service:hover {
+		color: unset;
+		transform: unset;
+		box-shadow: unset;
+	}
+	.card_service h4:hover {
+		margin: unset;
+		scale: unset;
+	}
 }
