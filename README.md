@@ -1,5 +1,4 @@
-#link of site : https://ace-of-digital.netlify.app/
-
+# website link : https://ace-of-digital.netlify.app/
 
 
 # Getting Started with Create React App
